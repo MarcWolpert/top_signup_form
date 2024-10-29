@@ -6,6 +6,11 @@
     font-weight:normal;
     font-style:normal;
 }
+:root{
+    --top-size:25vh;
+    --middle-size:37.5vh;
+    --botom-size:37.5vh;
+}
 body{
     width:100vw;
     height:100vh;
@@ -13,10 +18,8 @@ body{
     flex-direction:row;
 }
 
-
-
 #sidebarArea{
-    display:inherit;
+    display:flex;
     flex-direction:column;
     width:25vw;
 
@@ -52,6 +55,14 @@ h1 {
     font-size:5rem;
 
 }
+
+h2 {
+    position:static;
+    font-family:'Courier New', Courier, monospace;
+    color:black;
+    font-size:1rem;
+
+}
 #headerLogo{
     position:static;
     width:clamp(4rem,4.5rem, 5rem);
@@ -75,4 +86,53 @@ h1 {
     color:white;
     text-decoration:underline;
 }
+
+.formSection:before{
+    display:flex;
+    flex-direction:column;
+    height:25vh;
+    background-color:white;
+    overlay:auto;
+}
+#captureMessage{
+    display:flex;
+    flex-direction:column;
+    height:37.5vh;
+    justify-content: center;
+    margin-left:50px;
+}
+
+#formHeader{
+    margin-left:5%;
+}
+.form01,.form02,.form03{
+    display:flex;
+    flex-direction:row;
+    margin:5%;
+    font-size:0.75rem;
+    justify-content: space-around;
+    line-height:0%;
+    margin-right:500px;
+}
+
+.aboveText{
+    position:absolute;
+}
+
+#bottomText{
+    display:flex;
+    flex-direction:row;
+    
+}
+p > input {
+    position:relative;
+    top:10px;
+    width:100%;
+    border-radius:5%;
+}
+p>input:hover{
+    border-color:rgb(0, 0, 255,.3)
+}
+
+
 

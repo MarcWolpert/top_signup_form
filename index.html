@@ -13,21 +13,45 @@
             <h1>ODIN</h1>
         </div>
         <div class="footerTextGroup">
-            <p class="footerText">Photo by</p><p class="imageCredits"> Halie West</p>
-            <p class="footerText"> on </p><p class="imageCredits">Unsplash</p></p>
+            <span class="footerText">Photo by</span>
+            <span class="imageCredits">Halie West</span>
+            <span class="footerText">on</span>
+            <span class="imageCredits">Unsplash</span>
         </div>
     </div>
     <div id="userInputArea">
-        <div>
-            <h2></h2>
-            <p></p>
+        <div id="captureMessage">
+            <h2>This is not a real online service! You know you need something <br>
+                like this in your life to help you realize your deepest dreams.
+                <br><br>Sign up now to get started.
+            </h2>
         </div>
-        <div>
-            <p>
-
+        <div id="formSection">
+            <p id="formHeader">
+                Let's do this!
             </p>
-            <form action=""></form>
+            <form action="/my-handling-form-page">
+                <div class="form01">
+                    <p><label for="fname" class="aboveText">FIRST NAME</label><input type="text"></p>
+                    <p><label for="lname" class="aboveText">LAST NAME</label><input type="text"></p>
+                </div>
+                <div class="form02">
+                    <p><label for="email" class="aboveText">EMAIL</label><input type="email"></p>
+                    <p><label for="phoneNumber" class="aboveText">PHONE NUMBER</label><input type="tel"></p>
+                </div>
+                <div class="form03">
+                    <p><label for="password" class="aboveText">PASSWORD</label><input type="password"></p>
+                    <p><label for="confirmPassword" class="aboveText">CONFIRM PASSWORD</label><input type="password"></p>
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+        <div id="bottomText">
+            <span>
+                Already have an account? Log in
+            </span>
         </div>
     </div>
+    
 </body>
 </html>
