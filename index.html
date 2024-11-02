@@ -21,9 +21,9 @@
     </div>
     <div id="userInputArea">
         <div id="captureMessage">
-            <h2>This is not a real online service! You know you need something <br>
+            <h2>This is not a real online service! You <em>know</em> you need something <br>
                 like this in your life to help you realize your deepest dreams.
-                <br><br>Sign up now to get started.
+                <br><br>Sign up <em>now</em> to get started.
             </h2>
         </div>
         <div id="formSection">
@@ -31,24 +31,26 @@
                 Let's do this!
             </p>
             <form action="/my-handling-form-page">
-                <div class="form01">
-                    <p><label for="fname" class="aboveText">FIRST NAME</label><input type="text"></p>
-                    <p><label for="lname" class="aboveText">LAST NAME</label><input type="text"></p>
-                </div>
-                <div class="form02">
-                    <p><label for="email" class="aboveText">EMAIL</label><input type="email"></p>
-                    <p><label for="phoneNumber" class="aboveText">PHONE NUMBER</label><input type="tel"></p>
-                </div>
-                <div class="form03">
-                    <p><label for="password" class="aboveText">PASSWORD</label><input type="password"></p>
-                    <p><label for="confirmPassword" class="aboveText">CONFIRM PASSWORD</label><input type="password"></p>
+                <div class="inputBox">
+                    <div class="form01">
+                        <p class="aboveText"><label for="fname" class="aboveText">FIRST NAME</label><br><input type="text" required placeholder="John"></p>
+                        <p class="aboveText"><label for="lname">LAST NAME</label><br><input type="text" required placeholder="Doe"></p>
+                    </div>
+                    <div class="form02">
+                        <p class="aboveText"><label for="email">EMAIL</label><br><input type="email" required placeholder="a@gmail.com"></p>
+                        <p class="aboveText"><label for="phoneNumber">PHONE NUMBER</label><br><input type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="888-888-8888"></p>
+                    </div>
+                    <div class="form03">
+                        <p class="aboveText"><label for="password">PASSWORD</label><br><input type="password" required pattern="[a-zA-Z0-9]+" minlength="4" maxlength="20"></p>
+                        <p class="aboveText"><label for="confirmPassword">CONFIRM PASSWORD</label><br><input type="password" required pattern="[a-zA-Z0-9]+" minlength="4" maxlength="20"></p>
+                    </div>
                 </div>
                 <button type="submit">Create Account</button>
             </form>
         </div>
         <div id="bottomText">
             <span>
-                Already have an account? Log in
+                Already have an account? <a href="https://www.google.com" id="loginLink">Log in</a>
             </span>
         </div>
     </div>
